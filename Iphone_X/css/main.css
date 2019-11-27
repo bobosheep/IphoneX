@@ -1,0 +1,423 @@
+.iphone{
+    position: relative;
+    background-color: white;
+    width: 320px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 45px;
+  }
+  
+  .layer {
+    border-radius: 45px;
+    position: absolute;
+  }
+  .grey-layer {
+    width: 319.5px;
+    height: 649.5px;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a8a8a8+1,000000+5,757575+33,000000+90,000000+90,8c8c8c+99,666666+99 */
+  background: #a8a8a8; /* Old browsers */
+  background: -moz-linear-gradient(left,  #a8a8a8 1%, #000000 5%, #757575 33%, #000000 90%, #000000 90%, #8c8c8c 99%, #666666 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #a8a8a8 1%,#000000 5%,#757575 33%,#000000 90%,#000000 90%,#8c8c8c 99%,#666666 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #a8a8a8 1%,#000000 5%,#757575 33%,#000000 90%,#000000 90%,#8c8c8c 99%,#666666 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a8a8', endColorstr='#666666',GradientType=1 ); /* IE6-9 */
+  
+  
+  }
+  .white-layer {
+    left: 3.5px;
+    top: 3.5px;
+    width: 312px;
+    height: 642px;
+    background: white;
+  }
+  .black-layer {
+    left: 4.5px;
+    top: 4.5px;
+    width: 304px;
+    height: 634px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a8a8a8+0,000000+10,000000+25,757575+49,000000+60,000000+61,000000+80,a5a5a5+100 */
+  background: #a8a8a8; /* Old browsers */
+  background: -moz-linear-gradient(left,  #a8a8a8 0%, #000000 10%, #000000 25%, #757575 49%, #000000 60%, #000000 61%, #000000 80%, #a5a5a5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #a8a8a8 0%,#000000 10%,#000000 25%,#757575 49%,#000000 60%,#000000 61%,#000000 80%,#a5a5a5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #a8a8a8 0%,#000000 10%,#000000 25%,#757575 49%,#000000 60%,#000000 61%,#000000 80%,#a5a5a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8a8a8', endColorstr='#a5a5a5',GradientType=1 ); /* IE6-9 */
+  
+  }
+  
+  .screen {
+    border-radius: 30px;
+    top: 15px;
+    left: 12px;
+    width: 280px;
+    height: 600px;
+    background: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 8px;
+  }
+  
+  .color-block-lightgreen {
+    border-radius:20px;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#19fcc7+1,88e8b0+9,7cd3cc+36,f4f4f4+56,f4f4f4+57,ffddbc+63,ffce96+85,ff490c+100 */
+  background: #19fcc7; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #19fcc7 1%, #88e8b0 9%, #7cd3cc 36%, #f4f4f4 56%, #f4f4f4 57%, #ffddbc 63%, #ffce96 85%, #ff490c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #19fcc7 1%,#88e8b0 9%,#7cd3cc 36%,#f4f4f4 56%,#f4f4f4 57%,#ffddbc 63%,#ffce96 85%,#ff490c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #19fcc7 1%,#88e8b0 9%,#7cd3cc 36%,#f4f4f4 56%,#f4f4f4 57%,#ffddbc 63%,#ffce96 85%,#ff490c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19fcc7', endColorstr='#ff490c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+  }
+  
+  .header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .left {
+    position: absolute;
+    left: 11.5%;
+    width: 25%;
+  }
+  .center {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+  }
+  .right {
+    position: absolute;
+    left: 73%;
+    width: 25%;
+  }
+  
+  
+  
+  .head {
+    width: 150px;
+    height: 22px;
+    background: #101010;
+    border-top-left-radius:     0px;
+    border-top-right-radius:    0px;
+    border-bottom-right-radius: 18px 15px;
+    border-bottom-left-radius:  18px 15px;
+  }
+  
+  .head > .camera {  
+    position: absolute;
+    left: 72%;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6270a1+0,061651+12,2d2d2d+100 */
+    background: #6270a1; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #6270a1 0%, #061651 12%, #2d2d2d 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #6270a1 0%,#061651 12%,#2d2d2d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #6270a1 0%,#061651 12%,#2d2d2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6270a1', endColorstr='#2d2d2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+  
+  .head > .speaker {
+    position: absolute;
+    left: 25%;
+    top: 6px;
+    border-radius: 30px;
+    width: 40%;
+    height: 5px;
+    background: #383b4f;  
+  }
+  
+  .status-bar {
+    position: absolute;
+    top: 7px;
+    color: white;
+    font-size: 12px;
+    
+  }
+  .status-bar > i{
+    margin-left: 1px;
+  }
+  
+  .button {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+-1,000000+0,eaeaea+20,eaeaea+80,000000+100 */
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #000000 -1%, #000000 0%, #eaeaea 20%, #eaeaea 80%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #000000 -1%,#000000 0%,#eaeaea 20%,#eaeaea 80%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000000 -1%,#000000 0%,#eaeaea 20%,#eaeaea 80%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  
+  }
+  
+  .button.volume {
+    margin-left: -4px;
+    margin-top: 80px;
+    width: 3px;
+    height: 30px;
+    
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #686868;
+    border-top-left-radius:     3px 2px;
+    border-top-right-radius:    0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:  3px 2px;
+  }
+  
+  
+  .button.volume-up {
+    margin-left: -4px;
+    margin-top: 30px;
+    width: 3px;
+    height: 60px;
+   
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #686868;
+    border-top-left-radius:     3px 2px;
+    border-top-right-radius:    0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:  3px 2px;
+  }
+  
+  .button.volume-down {
+    margin-left: -4px;
+    margin-top: 10px;
+    width: 3px;
+    height: 60px;
+   
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #686868;
+    border-top-left-radius:     3px 2px;
+    border-top-right-radius:    0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:  3px 2px;
+  }
+  
+  .button.power{
+    float: right;
+    margin-right: -4px;
+    margin-top: 165px;
+    width: 3px;
+    height: 85px;
+   
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #686868;
+    border-top-left-radius:     0px;
+    border-top-right-radius:    3px 2px;
+    border-bottom-right-radius: 3px 2px;
+    border-bottom-left-radius:  0px;
+  }
+  
+  .lock-open {
+    width: 100%;
+    top: 50px;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .time, .date, .lock-open {
+    cursor: default;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Calibri;
+    z-index: 10;
+  }
+  #lock-screen > .time {
+    top: 90px;  
+    width: 100%;
+    content: "16:56";
+    font-size: 75px;
+    font-weight: lighter;
+    text-align: center;
+    
+  }
+  .date {
+    top: 180px;
+    width: 100%;
+    font-family: Monospace;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    
+  }
+  
+  .bottom-bar {
+    position: absolute;
+    bottom: 5px;
+    left: 90px;
+    width: 110px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  .bottom-bar:hover {
+    transition:All 0.1s ease-in-out;
+    transform:translate(10px,0px);
+  }
+  
+  .icon {
+    cursor: default;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(50, 50, 50, 0.6);
+    color: white;
+    text-align: center;
+  }
+  
+  .icon:hover {
+    cursor: pointer;
+    background: rgba(50, 50, 50, 0.3);
+    transform: scale(1.5);
+    transition: .5s;
+  }
+  
+  .icon.flashlight-icon {
+    left: 25px;
+    bottom: 50px;
+  }
+  
+  .icon.camera-icon {
+    right: 25px;
+    bottom: 50px;
+  }
+  
+  .apps {
+    padding-left: 7.5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  
+  .fixed-apps {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    width: 94%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+  }
+  
+  .app {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 7.5px;
+    border-radius: 10px;
+    z-index: 3;
+  }
+  .fixed-apps > .app {
+    margin-top: 15px;
+  }
+  
+  .app.mail {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/c7/40/e5/c740e5f0-2a62-4fa7-dc1b-66ea3d519545/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/146x0w.jpg');
+    background-size: cover;
+  }
+  .app.calender {
+    background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/df/82/fb/df82fbdf-b76c-6bdb-007e-930ca47ab945/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.photos {
+    background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/5d/f8/1d/5df81d61-d288-a871-f749-1997811f8790/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.camera {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/5b/ab/98/5bab9841-3b2a-90d0-1836-f43d4c615b09/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.map {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/6e/0f/03/6e0f0328-b2bd-6fcc-bbd8-3014601467d1/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.hint {
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/6a/ab/53/6aab531e-f0b4-850b-785b-e40a605714d7/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.clips {
+    background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/31/0f/be/310fbedf-06db-2736-f73b-77f70a9cd1fb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.notes {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/72/d1/1d/72d11d4d-07f5-8111-9007-0b119b86a9dd/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.app-store {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/28/95/c6/2895c6ef-9a62-8b1f-8ef4-6af7ff0d7642/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.marketing {
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ab/7e/c5/ab7ec52b-81d8-bf5d-83da-2ed0193a6239/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.phone-call {
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/2c/9d/a0/2c9da0f8-b012-0d12-c1f3-a56e56858b08/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/146x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.safari {
+    background-color: white;
+    background-image: url('https://km.support.apple.com/kb/image.jsp?productid=PL165');
+    background-size: cover;
+  }
+  .app.messages {
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ab/7e/c5/ab7ec52b-81d8-bf5d-83da-2ed0193a6239/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.music {
+    background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/e9/83/82/e9838282-357a-f013-bc68-26a17d729348/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  
+  .app.line {
+    background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/cf/98/38/cf9838cc-b14a-6f88-b1d4-bc22dcc5e31d/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png');
+    background-size: cover;
+  }
+  
+  .app.instagram {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a2/19/71/a2197180-0d9f-12b3-1ebe-12a41e8db059/Prod-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png');
+    background-size: cover;
+  }
+  
+  .app.facebook {
+    background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/04/2dd604e4-c0f6-27fc-6d1f-a800c3c264db/Icon-Production-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/320x0w.png');
+    background-size: cover;
+  }
+  .app.messenger {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/13/90/eb/1390ebd5-cce8-0d37-9398-648fc5fcea09/Icon-0-1x_U007emarketing-0-0-85-220-0-7.png/246x0w.png');
+    background-size: cover;
+  }
+  
+  .header > .left > .time {
+    position: absolute;
+    top: 2px;
+    font-size: 16px;
+    color: white;
+    
+    
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <script src="https://kit.fontawesome.com/3974d16019.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="ShowTime()">
+        <div class="iphone">
+        <div class="layer grey-layer">
+        </div>
+        <div class="layer white-layer">
+        </div>
+        <div class="layer black-layer">
+        </div>
+        <div class="layer screen" id="screen">
+    
+            <div class="layer color-block-lightgreen"></div>
+            <div id="lock-screen">
+            <div class="lock-open">
+                <i class="fas fa-lock-open"></i>
+            </div>
+            <div id="time" class="time"></div>
+            <div id="date" class="date"></div>
+            <div class="icon flashlight-icon">
+                <i class="fas fa-phone-alt" style="margin-top:12px;"></i>
+            </div>
+            <div class="icon camera-icon">
+                <i class="fas fa-camera" style="margin-top:12px;"></i>
+            </div>
+            <div class="bottom-bar"></div>
+            </div>
+    
+            <div id="home-screen" style="display: none">
+            <div class="apps">
+                <div class="app mail"></div>
+                <div class="app calender"></div>
+                <div class="app photos"></div>
+                <div class="app camera"></div>
+                <div class="app map"></div>
+                <div class="app hint"></div>
+                <div class="app clips"></div>
+                <div class="app notes"></div>
+                <div class="app app-store"></div>
+                <div class="app marketing"></div>
+                <div class="app line"></div>
+                <div class="app instagram"></div>
+                <div class="app facebook"></div>
+            </div>      
+            <div class="fixed-apps">
+                <div class="app phone-call"></div>
+                <div class="app safari"></div>
+                <div class="app messenger"></div>
+                <div class="app music"></div>
+            </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="left">
+            <div id="unlock-time" class="time" style="display: none"></div>
+            </div>
+            <div class="center">
+            <div class="head">
+                <div class="camera"></div>
+                <div class="speaker"></div>
+            </div>
+            </div>
+            <div class="right">
+            <div class="status-bar">    
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>    
+                <i class="fas fa-battery-three-quarters"></i> 
+            </div>        
+            </div>
+        </div>
+        <div id="power" class="button power" onclick="LockScreen()"></div>
+        <div class="button volume"></div>
+        <div class="button volume-up"></div>
+        <div class="button volume-down"></div>
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>
