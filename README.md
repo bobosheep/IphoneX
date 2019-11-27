@@ -1,6 +1,6 @@
-# Iphone
-Draw iphone as a gift for myself
+# iPhone
+Draw :iphone:iPhone as gifts for myself :smile::smile:
 
-## IphoneX
-get iphoneX from [here](https://bobosheep.github.io/My-Iphone/iphoneX/index.html)
-![iphoneX](results/iphoneX.png)
+## iPhoneX
+get iPhoneX from [here](https://bobosheep.github.io/iPhone/iPhoneX/index.html)
+![iPhoneX](results/iPhoneX.PNG)
