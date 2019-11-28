@@ -1,3 +1,9 @@
+:root {
+  --main-font-color: white;
+  --main-font-size:  12px;
+  --main-font-family: Calibri;
+}
+
 .iphone{
     position: relative;
     background-color: white;
@@ -111,6 +117,15 @@
     border-bottom-right-radius: 18px 15px;
     border-bottom-left-radius:  18px 15px;
   }
+
+
+  .header > .left > .time {
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    color: var(--main-font-color);
+       
+  }
   
   .head > .camera {  
     position: absolute;
@@ -140,8 +155,8 @@
   .status-bar {
     position: absolute;
     top: 7px;
-    color: white;
-    font-size: 12px;
+    color: var(--main-font-color);
+    font-size: 8px;
     
   }
   .status-bar > i{
@@ -232,8 +247,8 @@
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-    font-family: Calibri;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
     z-index: 10;
   }
   #lock-screen > .time {
@@ -248,8 +263,8 @@
   .date {
     top: 180px;
     width: 100%;
-    font-family: Monospace;
-    font-size: 15px;
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
     font-weight: lighter;
     text-align: center;
     
@@ -277,7 +292,7 @@
     border-radius: 50%;
     position: absolute;
     background: rgba(50, 50, 50, 0.6);
-    color: white;
+    color: var(--main-font-color);
     text-align: center;
   }
   
@@ -302,8 +317,11 @@
     padding-left: 7.5px;
     padding-right: 5px;
     position: absolute;
-    top: 50px;
+    top: 30px;
     width: 100%;
+    animation-name: center-apps-move-in;
+    animation-duration: .8s;
+    
   }
   
   .fixed-apps {
@@ -314,6 +332,9 @@
     height: 80px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
+    
+    animation-name: bottom-apps-slide-in;
+    animation-duration: 1.2s;
   }
   
   .app {
@@ -321,60 +342,13 @@
     width: 50px;
     height: 50px;
     margin: 7.5px;
+    margin-top: 25px;
     border-radius: 10px;
     z-index: 3;
   }
   .fixed-apps > .app {
     margin-top: 15px;
   }
-  
-  .app.mail {
-    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/c7/40/e5/c740e5f0-2a62-4fa7-dc1b-66ea3d519545/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/146x0w.jpg');
-    background-size: cover;
-  }
-  .app.calender {
-    background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/df/82/fb/df82fbdf-b76c-6bdb-007e-930ca47ab945/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
-    background-size: cover;
-  }
-  .app.photos {
-    background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/5d/f8/1d/5df81d61-d288-a871-f749-1997811f8790/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
-    background-size: cover;
-  }
-  .app.camera {
-    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/5b/ab/98/5bab9841-3b2a-90d0-1836-f43d4c615b09/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
-  .app.map {
-    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/6e/0f/03/6e0f0328-b2bd-6fcc-bbd8-3014601467d1/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
-  .app.hint {
-    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/6a/ab/53/6aab531e-f0b4-850b-785b-e40a605714d7/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
-  .app.clips {
-    background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/31/0f/be/310fbedf-06db-2736-f73b-77f70a9cd1fb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
-  .app.notes {
-    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/72/d1/1d/72d11d4d-07f5-8111-9007-0b119b86a9dd/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
-  .app.app-store {
-    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/28/95/c6/2895c6ef-9a62-8b1f-8ef4-6af7ff0d7642/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
-  .app.marketing {
-    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ab/7e/c5/ab7ec52b-81d8-bf5d-83da-2ed0193a6239/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/320x0w.jpg');
-    background-size: cover;
-  }
-  
   .app.phone-call {
     background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/2c/9d/a0/2c9da0f8-b012-0d12-c1f3-a56e56858b08/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/146x0w.jpg');
     background-size: cover;
@@ -389,35 +363,204 @@
     background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ab/7e/c5/ab7ec52b-81d8-bf5d-83da-2ed0193a6239/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/320x0w.jpg');
     background-size: cover;
   }
+  .app.messenger {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/13/90/eb/1390ebd5-cce8-0d37-9398-648fc5fcea09/Icon-0-1x_U007emarketing-0-0-85-220-0-7.png/246x0w.png');
+    background-size: cover;
+  }
   .app.music {
     background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/e9/83/82/e9838282-357a-f013-bc68-26a17d729348/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
     background-size: cover;
+  }
+  
+  .app.mail {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/c7/40/e5/c740e5f0-2a62-4fa7-dc1b-66ea3d519545/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/146x0w.jpg');
+    background-size: cover;
+  }
+  .app.mail::after {
+    float: left;
+    margin-top: 52px;
+    content: "Mail";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  .app.calender {
+    background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/df/82/fb/df82fbdf-b76c-6bdb-007e-930ca47ab945/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.calender::after {
+    float: left;
+    margin-top: 52px;
+    content: "Calender";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  .app.photos {
+    background-image: url('https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/5d/f8/1d/5df81d61-d288-a871-f749-1997811f8790/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.photos::after {
+    float: left;
+    margin-top: 52px;
+    content: "Photos";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  .app.camera {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/5b/ab/98/5bab9841-3b2a-90d0-1836-f43d4c615b09/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.camera::after {
+    float: left;
+    margin-top: 52px;
+    content: "Films";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  
+  .app.map {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/6e/0f/03/6e0f0328-b2bd-6fcc-bbd8-3014601467d1/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.map::after {
+    float: left;
+    margin-top: 52px;
+    content: "Maps";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  
+  .app.hint {
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/6a/ab/53/6aab531e-f0b4-850b-785b-e40a605714d7/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.hint::after {
+    float: left;
+    margin-top: 52px;
+    content: "Hints";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  
+  .app.clips {
+    background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/31/0f/be/310fbedf-06db-2736-f73b-77f70a9cd1fb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.clips::after {
+    float: left;
+    margin-top: 52px;
+    content: "Clips";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  
+  .app.notes {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/72/d1/1d/72d11d4d-07f5-8111-9007-0b119b86a9dd/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.notes::after {
+    float: left;
+    margin-top: 52px;
+    content: "Notes";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  
+  .app.app-store {
+    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/28/95/c6/2895c6ef-9a62-8b1f-8ef4-6af7ff0d7642/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.app-store::after {
+    float: left;
+    margin-top: 52px;
+    content: "App Store";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
+  
+  .app.marketing {
+    background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ab/7e/c5/ab7ec52b-81d8-bf5d-83da-2ed0193a6239/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-8.png/320x0w.jpg');
+    background-size: cover;
+  }
+  .app.marketing::after {
+    float: left;
+    margin-top: 52px;
+    content: "Stocks";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
   }
   
   .app.line {
     background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/cf/98/38/cf9838cc-b14a-6f88-b1d4-bc22dcc5e31d/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png');
     background-size: cover;
   }
+  .app.line::after {
+    float: left;
+    margin-top: 52px;
+    content: "Line";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+  }
   
   .app.instagram {
     background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/a2/19/71/a2197180-0d9f-12b3-1ebe-12a41e8db059/Prod-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/320x0w.png');
     background-size: cover;
+  }
+  .app.instagram::after {
+    float: left;
+    margin-top: 52px;
+    content: "Instagram";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
   }
   
   .app.facebook {
     background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/04/2dd604e4-c0f6-27fc-6d1f-a800c3c264db/Icon-Production-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/320x0w.png');
     background-size: cover;
   }
-  .app.messenger {
-    background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/13/90/eb/1390ebd5-cce8-0d37-9398-648fc5fcea09/Icon-0-1x_U007emarketing-0-0-85-220-0-7.png/246x0w.png');
-    background-size: cover;
+  .app.facebook::after {
+    float: left;
+    margin-top: 52px;
+    content: "Facebook";
+    font-size: var(--main-font-size);
+    text-align: center;
+    width: 100%;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
   }
   
-  .header > .left > .time {
-    position: absolute;
-    top: 2px;
-    font-size: 16px;
-    color: white;
-    
-    
-  }
