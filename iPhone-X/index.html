@@ -4,6 +4,7 @@
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/camera.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
         <script src="https://kit.fontawesome.com/3974d16019.js" crossorigin="anonymous"></script>
     </head>
@@ -34,27 +35,42 @@
             </div>
     
             <div id="home-screen" style="display: none">
-            <div class="apps">
-                <div class="app mail"></div>
-                <div class="app calender"></div>
-                <div class="app photos"></div>
-                <div class="app camera"></div>
-                <div class="app map"></div>
-                <div class="app hint"></div>
-                <div class="app clips"></div>
-                <div class="app notes"></div>
-                <div class="app app-store"></div>
-                <div class="app marketing"></div>
-                <div class="app line"></div>
-                <div class="app instagram"></div>
-                <div class="app facebook"></div>
-            </div>      
-            <div class="fixed-apps">
-                <div class="app phone-call"></div>
-                <div class="app safari"></div>
-                <div class="app messenger"></div>
-                <div class="app music"></div>
-            </div>
+                <div class="apps" id="home-page">
+                    <div class="app mail"></div>
+                    <div class="app calender"></div>
+                    <div class="app photos"></div>
+                    <div class="app camera"></div>
+                    <div class="app map"></div>
+                    <div class="app hint"></div>
+                    <div class="app clips"></div>
+                    <div class="app notes"></div>
+                    <div class="app app-store"></div>
+                    <div class="app marketing"></div>
+                    <div class="app line"></div>
+                    <div class="app instagram"></div>
+                    <div class="app facebook"></div>
+                </div>
+                <div class="apps" id="second-page">
+                    <div class="app map"></div>
+                    <div class="app hint"></div>
+                    <div class="app clips"></div>
+                    <div class="app notes"></div>
+                    <div class="app app-store"></div>
+                    <div class="app marketing"></div>
+                    <div class="app line"></div>
+                    <div class="app instagram"></div>
+                    <div class="app facebook"></div>
+                    <div class="app mail"></div>
+                    <div class="app calender"></div>
+                    <div class="app photos"></div>
+                    <div class="app camera"></div>
+                </div>      
+                <div class="fixed-apps">
+                    <div class="app phone-call"></div>
+                    <div class="app safari"></div>
+                    <div class="app messenger"></div>
+                    <div class="app music"></div>
+                </div>
             </div>
         </div>
         <div class="header">
@@ -84,4 +100,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="js/jquery.ripples-min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/openApps.js"></script>
+    <script src="js/swipeApps.js"></script>
 </html>

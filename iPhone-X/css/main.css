@@ -67,6 +67,7 @@
     border-color: black;
     border-style: solid;
     border-width: 8px;
+    overflow: hidden;
   }
   
   .color-block-lightgreen {
@@ -84,6 +85,7 @@
   }
   
   .header {
+    z-index: 50;
     position: absolute;
     top: 20px;
     width: 100%;
@@ -319,9 +321,19 @@
     position: absolute;
     top: 30px;
     width: 100%;
+    height: calc(100% - 110px);
+    
+  }
+  #home-page {
+    left: 0;
+    right: 0;
     animation-name: center-apps-move-in;
     animation-duration: .8s;
-    
+  }
+
+  #second-page {
+    left: 100%;
+    right: 100%;
   }
   
   .fixed-apps {
@@ -346,6 +358,11 @@
     border-radius: 10px;
     z-index: 3;
   }
+
+  .app:hover {
+    cursor: pointer;
+  }
+
   .fixed-apps > .app {
     margin-top: 15px;
   }

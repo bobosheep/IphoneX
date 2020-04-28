@@ -7,7 +7,7 @@ const week = ['Sunday', 'Moday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', '
 const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 const hammertime = new Hammer(screen);
-const hammerPower = new Hammer(powerButton)
+const hammerPower = new Hammer(powerButton);
 hammertime.on('swipe', function(ev) {
     var lockScreen = document.getElementById('lock-screen')
     var homeScreen = document.getElementById('home-screen')
@@ -16,6 +16,7 @@ hammertime.on('swipe', function(ev) {
     homeScreen.style.display = 'block'
     unlockTime.style.display = 'block'
 });
+
 
 function LockScreen() {
     var lockScreen = document.getElementById('lock-screen')

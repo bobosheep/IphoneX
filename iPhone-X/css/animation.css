@@ -4,12 +4,6 @@
         bottom: -10px;
         opacity: 0;
     }
-    20%{
-        transform: scale(1.5);
-        bottom: -10px;
-        opacity: 0;
-
-    }
     100%{
         transform: scale(1);
         bottom: 15px;
@@ -18,7 +12,7 @@
 }
 @keyframes center-apps-move-in{
     from{
-        transform: scale(2);
+        transform: scale(1.5);
         top: 150px;
         opacity: 0;
     }
