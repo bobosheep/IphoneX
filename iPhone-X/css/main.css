@@ -273,9 +273,10 @@
   }
   
   .bottom-bar {
+    z-index: 100;
     position: absolute;
-    bottom: 5px;
-    left: 90px;
+    bottom: 36px;
+    left: 105px;
     width: 110px;
     height: 5px;
     background: white;
@@ -283,7 +284,8 @@
   }
   
   .bottom-bar:hover {
-    transition:All 0.1s ease-in-out;
+    cursor: pointer;
+    transition: All 0.1s ease-in-out;
     transform:translate(10px,0px);
   }
   

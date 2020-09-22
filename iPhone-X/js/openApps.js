@@ -9,9 +9,15 @@ $('.facebook').click(() => {
 
 
 $('.camera-icon').click(() => {
+    AppScreen()
     openCamera()
 })
 
+
+closeCamera = () => {
+    var camera = document.getElementsByClassName('camera-app');
+    camera.style.display = "none";
+}
 
 openCamera = () => {
 
@@ -49,6 +55,7 @@ openCamera = () => {
     cameraApp.append(video);
     cameraApp.append(mode);
     cameraApp.append(bottomToolbar);
+    $('#app-screen').append(cameraApp);
 
     /* Setting up the constraint */
     var facingMode = "user"; // Can be 'user' or 'environment' to access back or front camera (NEAT!)
@@ -63,7 +70,6 @@ openCamera = () => {
     navigator.mediaDevices.getUserMedia(constraints).then(function success(stream) {
         video.srcObject = stream;
     });
-    $('#screen').prepend(cameraApp);
     
     $('.circle').click(() => {
         var context = previousImg.getContext('2d');
