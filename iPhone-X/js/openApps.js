@@ -73,10 +73,13 @@ openCamera = () => {
     
     $('.circle').click(() => {
         var context = previousImg.getContext('2d');
-        console.log('draw')
+        video.style.opacity = 0.5;
         // Draw the video frame to the canvas.
-        context.drawImage(video, 0, 0, previousImg.width, 
+        context.drawImage(video, -20 , 0, previousImg.width + 20, 
             previousImg.height);
+        setTimeout(() => {
+            video.style.opacity = 1;
+        }, 100)
     })
 
 }
