@@ -21,8 +21,6 @@ function AppScreen() {
     appScreen.style.display = 'block'
 }
 function HomeScreen(ev) {
-    console.log(ev.type)
-    console.log('unlock')
     var lockScreen = document.getElementById('lock-screen')
     var homeScreen = document.getElementById('home-screen')
     var unlockTime = document.getElementById('unlock-time')
@@ -32,9 +30,7 @@ function HomeScreen(ev) {
     unlockTime.style.display = 'block'
     appScreen.style.display = 'none'
 }
-function LockScreen(ev) {
-    console.log(ev.type)
-    console.log('lock')
+function LockScreen() {
     var lockScreen = document.getElementById('lock-screen')
     var homeScreen = document.getElementById('home-screen')
     var unlockTime = document.getElementById('unlock-time')
@@ -64,6 +60,6 @@ function ShowTime(){
     setTimeout('ShowTime()',60000);
 }
 
-hammerScreen.on('panleft panright', HomeScreen(ev));
-hammerBar.on('panleft panright', HomeScreen(ev));
-$(LockScreen(ev));
+hammerScreen.on('panleft panright', HomeScreen());
+hammerBar.on('panleft panright', HomeScreen());
+$(LockScreen());
